@@ -112,14 +112,14 @@ const Header: NextPage = () => {
                             </div>
                         </div>
                         <div className="pt-5 pb-6">
-                            <div className="px-2 space-y-1">
+                            <div className="px-5 space-y-1">
                                 {navigation.map((item) => (
                                     <Link
                                         key={item.name}
                                         to={item.href}
                                         spy={true}
                                         smooth={true}
-                                        className="text-base font-medium text-white hover:text-gray-300"
+                                        className="text-base font-medium text-indigo-600 lg:text-white hover:text-gray-300 pr-4"
                                     >
                                         {item.name}
                                     </Link>
@@ -127,7 +127,7 @@ const Header: NextPage = () => {
                                 <a
                                     key="Contact us"
                                     href="mailto:admin@example.com"
-                                    className="text-base font-medium text-white hover:text-gray-300"
+                                    className="font-medium hover:text-gray-300 text-base text-indigo-600 lg:text-white"
                                 >
                                     Contact us
                                 </a>

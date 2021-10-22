@@ -1,23 +1,9 @@
 import type { NextPage } from "next";
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
-import { Fragment } from "react";
-import { Popover, Transition, Disclosure } from "@headlessui/react";
 import {
-    CloudUploadIcon,
-    CogIcon,
-    LockClosedIcon,
-    MenuIcon,
-    RefreshIcon,
-    ServerIcon,
-    ShieldCheckIcon,
-    XIcon,
-    SparklesIcon,
-    InboxIcon,
-    ChevronDownIcon
+    CloudUploadIcon,    
+    LockClosedIcon,    
+    RefreshIcon,    
 } from "@heroicons/react/outline";
-import { ChevronRightIcon } from "@heroicons/react/solid";
 
 const features = [
     {
@@ -38,33 +24,12 @@ const features = [
         "Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.",
       icon: RefreshIcon,
     },
-    // {
-    //   name: "Advanced Security",
-    //   description:
-    //     "Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.",
-    //   icon: ShieldCheckIcon,
-    // },
-    // {
-    //   name: "Powerful API",
-    //   description:
-    //     "Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.",
-    //   icon: CogIcon,
-    // },
-    // {
-    //   name: "Database Backups",
-    //   description:
-    //     "Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.",
-    //   icon: ServerIcon,
-    // },
   ];
 
 const HowItWorks: NextPage = () => {
     return (
-        <div className="relative bg-white py-16 sm:py-24 lg:py-32" id="HowItWorks">
+        <div className="relative bg-white py-16 sm:py-24 lg:py-32" id="howitworks">
             <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-                {/* <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
-                    Deploy faster
-                </h2> */}
                 <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
                     How It Works
                 </p>

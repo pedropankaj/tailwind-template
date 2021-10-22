@@ -1,33 +1,15 @@
 import type { NextPage } from "next";
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
-import { Fragment } from "react";
-import { Popover, Transition, Disclosure } from "@headlessui/react";
-import {
-    CloudUploadIcon,
-    CogIcon,
-    LockClosedIcon,
-    MenuIcon,
-    RefreshIcon,
-    ServerIcon,
-    ShieldCheckIcon,
-    XIcon,
-    SparklesIcon,
-    InboxIcon,
-    ChevronDownIcon
-} from "@heroicons/react/outline";
+import Link from "next/link";
 
 const footerNavigation = {
-
     company: [
-        { name: 'Term & Conditions', href: '#' },
-        { name: 'Privacy Policy', href: '#' },
+        { name: "Terms & Conditions", href: "/terms" },
+        { name: "Privacy Policy", href: "/privacy" },
     ],
     social: [
         {
-            name: 'Facebook',
-            href: '#',
+            name: "Facebook",
+            href: "#",
             icon: (props: any) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                     <path
@@ -39,8 +21,8 @@ const footerNavigation = {
             ),
         },
         {
-            name: 'Instagram',
-            href: '#',
+            name: "Instagram",
+            href: "#",
             icon: (props: any) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                     <path
@@ -52,8 +34,8 @@ const footerNavigation = {
             ),
         },
         {
-            name: 'Twitter',
-            href: '#',
+            name: "Twitter",
+            href: "#",
             icon: (props: any) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -61,8 +43,8 @@ const footerNavigation = {
             ),
         },
         {
-            name: 'GitHub',
-            href: '#',
+            name: "GitHub",
+            href: "#",
             icon: (props: any) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                     <path
@@ -74,8 +56,8 @@ const footerNavigation = {
             ),
         },
         {
-            name: 'Dribbble',
-            href: '#',
+            name: "Dribbble",
+            href: "#",
             icon: (props: any) => (
                 <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                     <path
@@ -87,8 +69,7 @@ const footerNavigation = {
             ),
         },
     ],
-}
-
+};
 
 const Footer: NextPage = () => {
     return (
@@ -105,48 +86,72 @@ const Footer: NextPage = () => {
                             alt="Company name"
                         />
                         <p className="text-gray-500 text-base">
-                            Making the world a better place through constructing elegant hierarchies.
+                            Making the world a better place through constructing
+                            elegant hierarchies.
                         </p>
                         <div className="flex space-x-6">
                             {footerNavigation.social.map((item) => (
-                                <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
-                                    <span className="sr-only">{item.name}</span>
-                                    <item.icon className="h-6 w-6" aria-hidden="true" />
-                                </a>
+                                <Link href={item.href} key={item.name}>
+                                    <a className="text-gray-400 hover:text-gray-500">
+                                        <span className="sr-only">
+                                            {item.name}
+                                        </span>
+                                        <item.icon
+                                            className="h-6 w-6"
+                                            aria-hidden="true"
+                                        />
+                                    </a>
+                                </Link>
                             ))}
                         </div>
                     </div>
                     <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-
                         <div className="md:grid md:grid-cols-2 md:gap-8">
                             <div>
-                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                    Company
+                                </h3>
                                 <ul role="list" className="mt-4 space-y-4">
                                     {footerNavigation.company.map((item) => (
                                         <li key={item.name}>
-                                            <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                            <a
+                                                href={item.href}
+                                                className="text-base text-gray-500 hover:text-gray-900"
+                                            >
                                                 {item.name}
                                             </a>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
-
                         </div>
                         <div>
-
                             <div>
-                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact Us</h3>
+                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                    Contact Us
+                                </h3>
                                 <ul role="list" className="mt-4 space-y-4">
-                                    <li className="text-base text-gray-500 hover:text-gray-900">#5424/54 wilson streets, main walla, israel 145245</li>
-                                    <li><a href="mailto:test@gmail.com" className="text-base text-gray-500 hover:text-gray-900">Demo@gmail.com</a></li>
+                                    <li className="text-base text-gray-500 hover:text-gray-900">
+                                        #5424/54 wilson streets, main walla,
+                                        israel 145245
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="mailto:admin@example.com"
+                                            className="text-base text-gray-500 hover:text-gray-900"
+                                        >
+                                            admin@example.com
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="mt-12 border-t border-gray-200 py-8">
-                    <p className="text-base text-gray-400 xl:text-center">&copy; 2020 Workflow, Inc. All rights reserved.</p>
+                    <p className="text-base text-gray-400 xl:text-center">
+                        &copy; 2020 Workflow, Inc. All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
@@ -154,4 +159,3 @@ const Footer: NextPage = () => {
 };
 
 export default Footer;
-

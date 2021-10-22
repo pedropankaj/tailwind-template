@@ -13,8 +13,8 @@ const navigation = [
 
 const Header: NextPage = () => {
     return (
-        <Popover as="header" className="relative">
-            <div className="bg-gray-900 pt-6">
+        <Popover as="header" className="relative bg-gray-900">
+            <div className=" py-6">
                 <nav
                     className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
                     aria-label="Global"

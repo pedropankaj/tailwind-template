@@ -73,8 +73,8 @@ const Features: NextPage = () => {
                     <div className="mt-12 sm:mt-16 lg:mt-0">
                         <div className="flex justify-center">
                             <img
-                                className="rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                                src="sc_dummy2.png"
+                                className="rounded-3xl shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
+                                src="first_ss.png"
                                 alt="Inbox user interface"
                             />
                         </div>
@@ -119,8 +119,8 @@ const Features: NextPage = () => {
                     <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
                         <div className="flex justify-center">
                             <img
-                                className="rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                                src="sc_dummy.png"
+                                className="rounded-3xl shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
+                                src="sec_ss.png"
                                 alt="Customer profile user interface"
                             />
                         </div>

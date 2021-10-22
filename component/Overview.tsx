@@ -24,15 +24,15 @@ const Overview: NextPage = () => {
                             <div className="grid grid-cols-2 gap-4 mt-10">
                                 <div className="flex justify-start">
                                     <img
-                                        className="w-10/12"
-                                        src="/google-store.png"
+                                        className="w-10/12 rounded-xl"
+                                        src="/android_bg_white.png"
                                         alt=""
                                     />
                                 </div>
                                 <div className="flex justify-left">
                                     <img
-                                        className="w-10/12"
-                                        src="/apple-final.png"
+                                        className="w-10/12 rounded-xl"
+                                        src="/apple_bg_white.png"
                                         alt=""
                                     />
                                 </div>
@@ -44,15 +44,15 @@ const Overview: NextPage = () => {
                         <div className="grid grid-cols-2 gap-4 mt-10">
                             <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
                                 <img
-                                    className="w-full lg:absolute lg:-bottom-1/4 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                    src="/sc_dummy2.png"
+                                    className="w-full lg:absolute lg:-bottom-1/4 lg:left-0 lg:h-full lg:w-auto lg:max-w-none rounded-3xl"
+                                    src="/third_ss.png"
                                     alt=""
                                 />
                             </div>
                             <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
                                 <img
-                                    className=" lg:absolute lg:h-full lg:right-0"
-                                    src="/sc_dummy.png"
+                                    className=" lg:absolute lg:h-full lg:right-0 rounded-3xl"
+                                    src="/fourth_ss.png"
                                     alt=""
                                 />
                             </div>

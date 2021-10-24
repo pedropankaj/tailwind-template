@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 
-import Header from '../component/Header'
-import Overview from '../component/Overview'
-import HowItWorks from '../component/HowItWorks'
-import Features from "../component/Features";
-import Faq from "../component/Faq";
-import CostCenter from "../component/CostCenter";
-import Footer from "../component/Footer";
+import Header from '../components/Header'
+import Overview from '../components/Overview'
+import HowItWorks from '../components/HowItWorks'
+import Features from "../components/Features";
+import Faq from "../components/Faq";
+import CostCenter from "../components/CostCenter";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (

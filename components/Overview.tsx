@@ -23,18 +23,22 @@ const Overview: NextPage = () => {
                             </p>
                             <div className="grid grid-cols-2 gap-4 mt-14">
                                 <div className="flex justify-center lg:justify-start pr-4">
+                                    <a href="https://play.google.com/" target="_blank">
                                     <img
                                         className="rounded-xl shadow-xl lg:h-18 lg:w-11/12 "
                                         src="/black_bg_android.png"
                                         alt=""
                                     />
+                                    </a>
                                 </div>
                                 <div className="flex justify-center lg:justify-end pl-4">
+                                <a href="https://apps.apple.com/" target="_blank">
                                     <img
                                         className="rounded-xl shadow-xl lg:h-18 lg:w-11/12 "
                                         src="/black_bg_apple.png"
                                         alt=""
                                     />
+                                    </a>
                                 </div>
                             </div>
                             <div className="mt-10 sm:mt-12"></div>

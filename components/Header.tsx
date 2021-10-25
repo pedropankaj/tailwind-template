@@ -14,7 +14,7 @@ const navigation = [
 const Header: NextPage = () => {
     return (
         <Popover as="header" className="relative">
-            <div className=" py-6 bg-white">
+            <div className="py-3 lg:py-6 bg-white">
                 <nav
                     className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
                     aria-label="Global"

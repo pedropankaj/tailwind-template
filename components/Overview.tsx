@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 const Overview: NextPage = () => {
     return (
         <div
-            className="pt-5 bg-white-900 sm:pt-16 lg:pt-4 pb-44 lg:overflow-hidden"
+            className="lg:pt-5 bg-white-900 sm:pt-16 lg:pt-4 pb-44 lg:overflow-hidden"
             id="overview"
         >
             <div className="mx-auto max-w-7xl lg:px-8">

@@ -2,16 +2,17 @@ import type { NextPage } from "next";
 
 const CostCenter: NextPage = () => {
     return (
-        <div className="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
+        <div className="pb-16 rounded-xl lg:pb-0 lg:z-10 lg:relative">
+            {/* bg-gradient-to-r from-teal-500 to-cyan-600 */}
+            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8 bg-gray-100 lg:rounded-xl my-16">
                 <div className="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
-                    <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+                    <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 py-8 lg:max-w-none">
                         <blockquote>
                             <div>
-                                <h2 className="text-3xl font-extrabold tracking-tight text-white">
+                                <h2 className="text-3xl font-extrabold tracking-tight text-black">
                                     Cost Center to Profit Center
                                 </h2>
-                                <p className="mt-6 text-2xl font-medium text-white">
+                                <p className="mt-6 text-2xl font-medium text-black">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Sed urna nulla vitae
                                     laoreet augue. Amet feugiat est integer
@@ -21,12 +22,8 @@ const CostCenter: NextPage = () => {
                         </blockquote>
                     </div>
                 </div>
-                <div className="relative lg:-my-8">
-                    <div
-                        aria-hidden="true"
-                        className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"
-                    />
-                    <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                <div className="flex lg:py-12 lg:pr-8">
+                    <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0">
                         <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                             <img
                                 className="object-cover lg:h-full lg:w-full"

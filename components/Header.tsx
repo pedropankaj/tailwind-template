@@ -13,8 +13,8 @@ const navigation = [
 
 const Header: NextPage = () => {
     return (
-        <Popover as="header" className="relative bg-gray-900">
-            <div className=" py-6">
+        <Popover as="header" className="relative">
+            <div className=" py-6 bg-white">
                 <nav
                     className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
                     aria-label="Global"
@@ -30,7 +30,7 @@ const Header: NextPage = () => {
                                 />
                             </a>
                             <div className="-mr-2 flex items-center md:hidden">
-                                <Popover.Button className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
+                                <Popover.Button className=" rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-indigo-400 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
                                     <span className="sr-only">
                                         Open main menu
                                     </span>
@@ -48,7 +48,7 @@ const Header: NextPage = () => {
                                     to={item.href}
                                     spy={true}
                                     smooth={true}
-                                    className="text-base font-medium text-white hover:text-gray-300"
+                                    className="text-base font-medium hover:text-indigo-400"
                                 >
                                     {item.name}
                                 </Link>
@@ -56,13 +56,13 @@ const Header: NextPage = () => {
                             <a
                                 key="Contact us"
                                 href="mailto:admin@example.com"
-                                className="text-base font-medium text-white hover:text-gray-300"
+                                className="text-base font-medium hover:text-indigo-400"
                             >
                                 Contact us
                             </a>
                         </div>
                     </div>
-                    <div className="hidden md:flex md:items-center md:space-x-6">
+                    {/* <div className="hidden md:flex md:items-center md:space-x-6">
                         <a
                             href="#"
                             className="text-base font-medium text-white hover:text-gray-300"
@@ -75,7 +75,7 @@ const Header: NextPage = () => {
                         >
                             Start free trial
                         </a>
-                    </div>
+                    </div> */}
                 </nav>
             </div>
 
@@ -132,7 +132,7 @@ const Header: NextPage = () => {
                                     Contact us
                                 </a>
                             </div>
-                            <div className="mt-6 px-5">
+                            {/* <div className="mt-6 px-5">
                                 <a
                                     href="#"
                                     className="block text-center w-full py-3 px-4 rounded-md shadow bg-indigo-600 text-white font-medium hover:bg-indigo-700"
@@ -150,7 +150,7 @@ const Header: NextPage = () => {
                                         Login
                                     </a>
                                 </p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </Popover.Panel>

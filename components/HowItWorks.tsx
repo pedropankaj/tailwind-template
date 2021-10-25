@@ -30,7 +30,7 @@ const features = [
 
 const HowItWorks: NextPage = () => {
     return (
-        <div className="relative bg-white py-16 sm:py-24 lg:py-32" id="howitworks">
+        <div className="relative bg-white sm:py-24 lg:py-32" id="howitworks">
             <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                 <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
                     How It Works

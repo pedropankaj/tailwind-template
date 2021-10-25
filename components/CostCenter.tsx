@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 
 const CostCenter: NextPage = () => {
     return (
-        <div className="pb-16 rounded-xl lg:pb-0 lg:z-10 lg:relative">
+        <div className="rounded-xl lg:z-10 lg:relative">
             {/* bg-gradient-to-r from-teal-500 to-cyan-600 */}
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8 bg-gray-100 lg:rounded-xl my-16">
+            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8 bg-gray-100 rounded-xl lg:my-16 mx-4 lg:mx-auto">
                 <div className="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
                     <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 py-8 lg:max-w-none">
                         <blockquote>
@@ -12,7 +12,7 @@ const CostCenter: NextPage = () => {
                                 <h2 className="text-3xl font-extrabold tracking-tight text-black">
                                     Cost Center to Profit Center
                                 </h2>
-                                <p className="mt-6 text-2xl font-medium text-black">
+                                <p className="mt-6 text-lg text-gray-500">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Sed urna nulla vitae
                                     laoreet augue. Amet feugiat est integer

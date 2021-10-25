@@ -20,7 +20,7 @@ const Header: NextPage = () => {
                     aria-label="Global"
                 >
                     <div className="flex items-center flex-1">
-                        <div className="flex items-center justify-between w-full md:w-auto">
+                        <div className="flex items-center justify-center md:justify-between w-full md:w-auto">
                             <a href="#">
                                 <span className="sr-only">Workflow</span>
                                 <img
@@ -28,16 +28,18 @@ const Header: NextPage = () => {
                                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                                     alt=""
                                 />
+                                
                             </a>
                             <div className="-mr-2 flex items-center md:hidden">
+                            <p className="pl-4 font-extrabold">MyApp</p>
                                 <Popover.Button className=" rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-indigo-400 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
                                     <span className="sr-only">
                                         Open main menu
                                     </span>
-                                    <MenuIcon
+                                    {/* <MenuIcon
                                         className="h-6 w-6"
                                         aria-hidden="true"
-                                    />
+                                    /> */}
                                 </Popover.Button>
                             </div>
                         </div>
@@ -48,7 +50,7 @@ const Header: NextPage = () => {
                                     to={item.href}
                                     spy={true}
                                     smooth={true}
-                                    className="text-base font-medium hover:text-indigo-400"
+                                    className="text-base font-medium hover:text-indigo-400 font-bold"
                                 >
                                     {item.name}
                                 </Link>
@@ -56,7 +58,7 @@ const Header: NextPage = () => {
                             <a
                                 key="Contact us"
                                 href="mailto:admin@example.com"
-                                className="text-base font-medium hover:text-indigo-400"
+                                className="text-base font-medium hover:text-indigo-400 font-bold"
                             >
                                 Contact us
                             </a>
@@ -79,7 +81,7 @@ const Header: NextPage = () => {
                 </nav>
             </div>
 
-            <Transition
+            {/* <Transition
                 as={Fragment}
                 enter="duration-150 ease-out"
                 enterFrom="opacity-0 scale-95"
@@ -87,8 +89,8 @@ const Header: NextPage = () => {
                 leave="duration-100 ease-in"
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
-            >
-                <Popover.Panel
+            > */}
+                {/* <Popover.Panel
                     focus
                     className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
                 >
@@ -131,7 +133,7 @@ const Header: NextPage = () => {
                                 >
                                     Contact us
                                 </a>
-                            </div>
+                            </div> */}
                             {/* <div className="mt-6 px-5">
                                 <a
                                     href="#"
@@ -150,11 +152,11 @@ const Header: NextPage = () => {
                                         Login
                                     </a>
                                 </p>
-                            </div> */}
-                        </div>
-                    </div>
-                </Popover.Panel>
-            </Transition>
+                //             </div> 
+                //         </div>
+                //     </div>
+                // </Popover.Panel>
+            // </Transition>*/}
         </Popover>
     );
 };

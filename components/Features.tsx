@@ -3,7 +3,7 @@ import { SparklesIcon, InboxIcon } from "@heroicons/react/outline";
 
 const Features: NextPage = () => {
     return (
-        <div className="relative pt-16 pb-32 overflow-hidden" id="features">
+        <div className="relative pt-16 lg:pb-32 pb-12 overflow-hidden" id="features">
             <div
                 aria-hidden="true"
                 className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"

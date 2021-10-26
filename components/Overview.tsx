@@ -22,22 +22,39 @@ const Overview: NextPage = () => {
                                 Elit sunt amet fugiat veniam occaecat fugiat.
                             </p>
                             <div className="grid grid-cols-2 gap-4 mt-14">
-                                <div className="flex justify-center lg:justify-start pr-4">
-                                    <a href="https://play.google.com/" target="_blank">
+                                <div className="flex justify-center lg:justify-start pr-4 ">
+                                    <a href="https://play.google.com/store/apps/details?id=com.facebook.katana" target="_blank" className="rounded-lg bg-black flex h-14 lg:h-16 py-1 px-2 hover:opacity-90 w-full md:w-auto lg:px-8">
                                     <img
-                                        className="rounded-xl shadow-xl lg:h-18 lg:w-11/12 "
-                                        src="/black_bg_android.png"
+                                        className="rounded-xl shadow-xl py-2"
+                                        src="/android-logo.png"
                                         alt=""
                                     />
+                                    <div className="pl-1.5 py-1">
+                                    <p  className="text-sm text-white h-3.5">
+                                            GET IT ON
+                                        </p>
+                                        <p className="font-bold lg:text-2xl text-white">
+                                            Google Play
+                                        </p>
+                                    </div>
                                     </a>
                                 </div>
                                 <div className="flex justify-center lg:justify-end pl-4">
-                                <a href="https://apps.apple.com/" target="_blank">
+                               
+                                    <a href="https://apps.apple.com/us/app/facebook/id284882215" target="_blank" className="rounded-lg bg-black flex h-14 lg:h-16 py-1 px-2 hover:opacity-90 w-full md:w-auto lg:px-8">
                                     <img
-                                        className="rounded-xl shadow-xl lg:h-18 lg:w-11/12 "
-                                        src="/black_bg_apple.png"
+                                        className="rounded-xl shadow-xl py-2"
+                                        src="/apple-logo.png"
                                         alt=""
                                     />
+                                    <div className="pl-2 py-1">
+                                    <p  className="text-sm text-white h-3.5">
+                                            Available on the
+                                        </p>
+                                        <p className="font-bold lg:text-2xl text-white">
+                                            App Store
+                                        </p>
+                                    </div>
                                     </a>
                                 </div>
                             </div>

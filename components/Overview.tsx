@@ -21,9 +21,9 @@ const Overview: NextPage = () => {
                                 sunt. Qui irure qui Lorem cupidatat commodo.
                                 Elit sunt amet fugiat veniam occaecat fugiat.
                             </p>
-                            <div className="grid grid-cols-2 gap-4 mt-14">
-                                <div className="flex justify-center lg:justify-start pr-4 ">
-                                    <a href="https://play.google.com/store/apps/details?id=com.facebook.katana" target="_blank" className="rounded-lg bg-black flex h-14 lg:h-16 py-1 px-2 hover:opacity-90 w-full md:w-auto lg:px-8">
+                            <div className="sm:grid grid-cols-2 gap-4 mt-14">
+                                <div className="flex justify-center lg:justify-start ">
+                                    <a href="https://play.google.com/store/apps/details?id=com.facebook.katana" target="_blank" className="rounded-lg bg-black flex h-14 lg:h-16 py-1 px-2 hover:opacity-90 lg:px-8 justify-center w-full sm:w-auto">
                                     <img
                                         className="rounded-xl shadow-xl py-2"
                                         src="/android-logo.png"
@@ -39,9 +39,9 @@ const Overview: NextPage = () => {
                                     </div>
                                     </a>
                                 </div>
-                                <div className="flex justify-center lg:justify-end pl-4">
+                                <div className="flex justify-center lg:justify-end mt-4 sm:mt-0">
                                
-                                    <a href="https://apps.apple.com/us/app/facebook/id284882215" target="_blank" className="rounded-lg bg-black flex h-14 lg:h-16 py-1 px-2 hover:opacity-90 w-full md:w-auto lg:px-8">
+                                    <a href="https://apps.apple.com/us/app/facebook/id284882215" target="_blank" className="rounded-lg bg-black flex h-14 lg:h-16 py-1 px-2 hover:opacity-90 lg:px-8 justify-center w-full sm:w-auto">
                                     <img
                                         className="rounded-xl shadow-xl py-2"
                                         src="/apple-logo.png"
